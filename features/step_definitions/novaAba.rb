@@ -15,6 +15,6 @@ Dado("que estou na página de solicitar nova aba") do
   Então("valido a existencia de nova aba e se está na URL correta") do
     window = page.driver.browser.window_handles
     page.driver.browser.switch_to.window(window.last)
-    expect("https://the-internet.herokuapp.com/windows/new").to eq(Capybara.current_url.to_s)
+    expect(Capybara.current_url.to_s).to eq("https://the-internet.herokuapp.com/windows/new")
   end
   
