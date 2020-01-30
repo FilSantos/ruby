@@ -4,9 +4,10 @@ require 'selenium-webdriver'
 require 'report_builder'
 require 'site_prism'
 
-include Capybara::DSL
+#include Capybara::DSL
 
 Capybara.register_driver :selenium do |app|
+  #Configura a incilização do Chrome
   Capybara::Selenium::Driver.new(
     app,
     browser: :chrome,
@@ -19,11 +20,10 @@ Capybara.register_driver :selenium do |app|
   )
  end
 
-
-
-
 Capybara.configure do |config|
+    #Carrega o Chrome
     config.default_driver = :selenium
+    #Define o tempo de timeout na localização de objetos
     config.default_max_wait_time = 5
 end
 
