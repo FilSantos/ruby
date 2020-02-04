@@ -2,7 +2,7 @@
 
 
 ## Objetivo
-    O objetivo deste repositorio é atender a solicitação dos entrevistadores para demonstrar o conhecimento na linguagem Ruby, utilizando as gems abaixo:
+    O objetivo deste repositorio é demonstrar o conhecimento na linguagem Ruby, utilizando as gems abaixo:
     - Selenium
     - Capybara
     - HTTParty
