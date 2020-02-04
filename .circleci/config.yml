@@ -19,10 +19,6 @@ jobs:
           command: |
             gem update --system
             gem install bundler
-          name: Run tests
-          command: |
-            - mkdir -p $CIRCLE_TEST_REPORTS/cucumber
-            - bundle exec cucumber --format junit --out $CIRCLE_TEST_REPORTS/cucumber/junit.xml
 
 
 # What to do next? Set up a test job. Please see 
